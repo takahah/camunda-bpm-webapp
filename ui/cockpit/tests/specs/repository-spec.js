@@ -54,7 +54,7 @@ describe('Repository Spec', function() {
     });
 
     it('should change sorting order on URL change', function() {
-      browser.getLocationAbsUrl().then(function(url) {
+      browser.getCurrentUrl().then(function(url) {
 
         expect(url).to.contain('deploymentsSortBy=name');
 
