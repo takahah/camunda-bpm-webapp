@@ -165,7 +165,7 @@
           <label class="control-label col-sm-4 col-md-2"
                  for="inputPassword">{{ 'USERS_NEW_PASSWORD' | translate }}</label>
 
-          <div class="col-sm-8 col-md-10">
+          <div class="col-sm-7 col-md-9">
             <input id="inputPassword"
                    name="inputPassword"
                    class="form-control"
@@ -178,6 +178,11 @@
               {{ 'USERS_PASSWORD_INVALID' | translate }}
             </p>
           </div>
+          <div cam-password-checker
+          cam-password-checker-password="credentials.password"
+          class="col-sm-1 col-md-1"></div>
+          {{credentials.password}}
+
         </div>
 
         <div class="form-group">
